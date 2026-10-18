@@ -55,10 +55,37 @@
             </tr>
         </table>
 
+        <h1>Forms</h1>
+        <!-- action=sends the data to a location/file | method=POST for sensitive stuff, GET for idk anything-->
+        <form action="index.txt">
+
+            <!-- What the "for" attr does is, when input is given an id, clicking on the label puts your keyboard
+             to the text box -->
+            <label for="username">What's my name? </label>
+            <input type="Text" id="username" required placeholder="My Name"> <input type="submit">
+            <br>
+            <label for="password">Password </label>
+            <input type="password" id="password" required placeholder="Password"> <input type="submit">
+            <br>
+            <label for="bday">Birthday </label>
+            <input type="date" id="bday" required placeholder="Birthdate"> <input type="submit">
+            <br>
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </form>
+
         <h1>Buttons</h1>
         <a href="index.html">
         <button style="font-size: medium; border-radius: 5px;">Bring me Back!</button>
+        </a><br>
+        <h1>Buttons</h1>
+        <a href="#top">
+        <button style="font-size: medium; border-radius: 5px;">^</button>
         </a>
+
 
     </body>
 </html>
