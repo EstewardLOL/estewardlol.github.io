@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <!-- This contains all information for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML&CSS Lessons</title> <!-- A title for the webpage -->
+    <link rel="icon" href="/ASSETS/Face.jpeg"> <!-- Sets an favicon, or the icon of the page using the link tag-->
+</head>
+<body> <!-- This contains everything that you could see in the webpage -->
+    <h1>This is a H1 Text!</h1>
+    <hr> <!-- This adds a horizontal line -->
+    <h3>The index.html is the default homepage or landing page of a website.</h3>
+    <p>This was supposed to be a continuous sentence <br> But, it was separated due to "br" or break </p>
+    <pre>This is a preformatted paragraph text</pre>
+    <!-- This is a comment! -->
+
+    <select id="page-select" onchange="goToPage()">
+        <option value="">Choose a lesson...</option>
+        <option value="LESSONS/hyprlink.html">Hyperlink</option>
+        <option value="LESSONS/images.html">Images</option>
+        <option value="LESSONS/playback.html">Audios and Videos</option>
+        <option value="LESSONS/txformatting.html">Text Formatting</option>
+    </select>
+
+    <script>
+    function goToPage() {
+          const select = document.getElementById("page-select");
+          const url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+    }
+    </script>
+</body>
+</html>
